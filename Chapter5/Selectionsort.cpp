@@ -1,15 +1,15 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
+    int b;
     cout<<"Enter number of elements";
-    cin>>n;
-    int arr[n];
-    for(int i=0;i<n;i++){
+    cin>>b;
+    int arr[b];
+    for(int i=0;i<b;i++){
         cin>>arr[i];
     }
-     for(int i=0;i<n-1;i++){
-         for(int j=i+1;j<n;j++){
+     for(int i=0;i<b-1;i++){
+         for(int j=i+1;j<b;j++){
              if(arr[j]<arr[i]){
              int temp=arr[j];
              arr[j]=arr[i];
@@ -17,7 +17,7 @@ int main(){
              }
          }
      }
-     for(int i=0;i<n;i++){
+     for(int i=0;i<b;i++){
          cout<<arr[i]<<" ";
      }
   return(0);
